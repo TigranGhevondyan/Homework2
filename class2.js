@@ -37,6 +37,22 @@ console.log(myfunc(5,2463))
 console.log(myfunc(4,6))
 console.log(myfunc(8,45689))
 
+var myfunc=function(a){
+let st=String(a);
+    if (st.length<=1){
+        return a;
+    }
+let res=st.substring(st.length-1)+st.substring(1,st.length-1)+st.substring(0,1);
+return Number(res);
+
+}
+
+print(myfunc(2));
+print(myfunc(13));
+print(myfunc(895796));
+
+
+
 var sort=function(a,b,c){
 let arr=[a,b,c]
 
@@ -58,3 +74,52 @@ return mx-mn;
 }
 
 console.log(sort(4593653));
+
+
+var myfunc=function(a,b,c){
+
+    let D=Math.pow(b,2)-4*a*c;
+    
+    if (a==0){
+      return "Enter valid constants";
+    }
+    
+    if(D<0){
+      return "Solution does not exists";
+    }
+    
+    if(D==0){
+    return "Solution is "+(-b/(2*a));
+    }
+    
+    return "Solutions are "+((-b+Math.sqrt(D))/(2*a))+" and "+((-b-Math.sqrt(D))/(2*a));
+    
+
+}
+
+print(myfunc(1,2,1));
+print(myfunc(0,4,-5));
+print(myfunc(3,-8,12));
+print(myfunc(5,-13,6));
+
+
+var myfunc=function(type,a,b){
+    
+    if (a<=0||b<=0){
+        return "Please enter only positives";
+    }
+    let area=0;
+    if (type== "triangle"){
+        area= a*b/2;
+    }
+    else{
+    area=a*b;
+    }
+   return "Square of the "+ type+ " is "+ area;
+}
+
+print(myfunc("triangle",6,7));
+print(myfunc("rectangle",8,5));
+print(myfunc("triangle",0,5));
+
+
