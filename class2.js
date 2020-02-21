@@ -1,4 +1,4 @@
-var myfunc=function(a,b,c){
+let myfunc=function(a,b,c){
 if(a===0||b===0||c===0){
 return "unsigned";
 }
@@ -24,7 +24,7 @@ console.log(myfunc(-8,9,-6))
 console.log(myfunc(4,19,-2))
 
 
-var myfunc=function(d,num){
+let myfunc=function(d,num){
 num=String(num)
 for(let i=0; i<num.length; i++){
 if(num[i]==d){
@@ -37,7 +37,7 @@ console.log(myfunc(5,2463))
 console.log(myfunc(4,6))
 console.log(myfunc(8,45689))
 
-var myfunc=function(a){
+let myfunc=function(a){
 let st=String(a);
     if (st.length<=1){
         return a;
@@ -47,13 +47,13 @@ return Number(res);
 
 }
 
-print(myfunc(2));
-print(myfunc(13));
-print(myfunc(895796));
+console.log (myfunc(2));
+console.log (myfunc(13));
+console.log (myfunc(895796));
 
 
 
-var sort=function(a,b,c){
+let sort=function(a,b,c){
 let arr=[a,b,c]
 
 return arr.sort(function(a,b){return a - b});
@@ -63,7 +63,7 @@ console.log(sort(45,26,78));
 console.log(sort(-23,-456,0));
 
 
-var sort=function(st){
+let sort=function(st){
 st=String(st);
 let arr=st.split('').sort(function(a,b){return a - b})
 
@@ -76,7 +76,7 @@ return mx-mn;
 console.log(sort(4593653));
 
 
-var myfunc=function(a,b,c){
+let myfunc=function(a,b,c){
 
     let D=Math.pow(b,2)-4*a*c;
     
@@ -97,13 +97,13 @@ var myfunc=function(a,b,c){
 
 }
 
-print(myfunc(1,2,1));
-print(myfunc(0,4,-5));
-print(myfunc(3,-8,12));
-print(myfunc(5,-13,6));
+console.log (myfunc(1,2,1));
+console.log(myfunc(0,4,-5));
+console.log(myfunc(3,-8,12));
+console.log (myfunc(5,-13,6));
 
 
-var myfunc=function(type,a,b){
+let myfunc=function(type,a,b){
     
     if (a<=0||b<=0){
         return "Please enter only positives";
@@ -118,8 +118,8 @@ var myfunc=function(type,a,b){
    return "Square of the "+ type+ " is "+ area;
 }
 
-print(myfunc("triangle",6,7));
-print(myfunc("rectangle",8,5));
-print(myfunc("triangle",0,5));
+console.log (myfunc("triangle",6,7));
+ console.log (myfunc("rectangle",8,5));
+ console.log (myfunc("triangle",0,5));
 
 
